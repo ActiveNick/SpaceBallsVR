@@ -272,6 +272,7 @@ GameObject:
   - component: {fileID: 1139767898}
   - component: {fileID: 1139767897}
   - component: {fileID: 1139767900}
+  - component: {fileID: 1139767901}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -356,8 +357,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603c8e5e7a585fc4a974823bf8238819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsRotating: 0
+  IsMoving: 0
   RotationRate: 10
+  OrbitingSpeed: 94
+--- !u!114 &1139767901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1139767895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d5a0a60fbe897549ad0bfe2039f12b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HostTransform: {fileID: 0}
+  DistanceScale: 2
+  RotationMode: 0
+  PositionLerpSpeed: 0.2
+  RotationLerpSpeed: 0.2
+  IsDraggingEnabled: 1
 --- !u!1 &1171390969
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,6 +389,7 @@ GameObject:
   - component: {fileID: 1171390972}
   - component: {fileID: 1171390971}
   - component: {fileID: 1171390974}
+  - component: {fileID: 1171390975}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -454,8 +474,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603c8e5e7a585fc4a974823bf8238819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsRotating: 0
+  IsMoving: 0
   RotationRate: 10
+  OrbitingSpeed: 5
+--- !u!114 &1171390975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1171390969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d5a0a60fbe897549ad0bfe2039f12b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HostTransform: {fileID: 0}
+  DistanceScale: 2
+  RotationMode: 0
+  PositionLerpSpeed: 0.2
+  RotationLerpSpeed: 0.2
+  IsDraggingEnabled: 1
 --- !u!1 &1302286057
 GameObject:
   m_ObjectHideFlags: 0

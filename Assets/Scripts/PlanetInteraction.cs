@@ -5,13 +5,13 @@ using HoloToolkit.Unity.InputModule;
 
 public class PlanetInteraction : MonoBehaviour, IInputClickHandler {
 
-    public bool IsRotating = false;
+    public bool IsMoving = false;
     public int RotationRate = 10;
+    public int OrbitingSpeed = 10;
 
     public void OnInputClicked(InputClickedEventData eventData)
     {
-        
-        IsRotating = !IsRotating;
+        IsMoving = !IsMoving;
     }
 
     // Use this for initialization
@@ -21,9 +21,10 @@ public class PlanetInteraction : MonoBehaviour, IInputClickHandler {
 	
 	// Update is called once per frame
 	void Update () {
-        if (IsRotating)
+        if (IsMoving)
         {
             gameObject.transform.Rotate(0, RotationRate * Time.deltaTime, 0);
+            gameObject.transform.RotateAround(Vector3.zero, Vector3.up, OrbitingSpeed * Time.deltaTime);
         }
 	}
 }
