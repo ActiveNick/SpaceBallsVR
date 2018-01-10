@@ -10,6 +10,7 @@ public class PlanetInteraction : MonoBehaviour, IInputClickHandler {
 
     public void OnInputClicked(InputClickedEventData eventData)
     {
+        
         IsRotating = !IsRotating;
     }
 
