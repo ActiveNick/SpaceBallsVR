@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using HoloToolkit.Unity.InputModule;
 
-public class PlanetInteraction : MonoBehaviour, IInputClickHandler {
+public class PlanetInteraction : MonoBehaviour { //, IInputClickHandler {
 
     public bool IsMoving = false;
     public int RotationRate = 10;
-    public int OrbitingSpeed = 10;
-
-    public void OnInputClicked(InputClickedEventData eventData)
-    {
-        IsMoving = !IsMoving;
-    }
+    public float OrbitingSpeed = 10;
+    
+    //public void OnInputClicked(InputClickedEventData eventData)
+    //{
+    //    IsMoving = !IsMoving;
+    //}
 
     // Use this for initialization
     void Start () {
