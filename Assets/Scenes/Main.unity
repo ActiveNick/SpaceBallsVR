@@ -166,11 +166,12 @@ Prefab:
         type: 2}
       propertyPath: AlternateRightController
       value: 
-      objectReference: {fileID: 151664, guid: fa49e460baf435b4780da7196c2ab473, type: 2}
+      objectReference: {fileID: 1097318689274706, guid: 869d340c69dbcef459070c1a159d38ac,
+        type: 2}
     - target: {fileID: 114710303647202208, guid: d29bc40b7f3df26479d6a0aac211c355,
         type: 2}
       propertyPath: AlwaysUseAlternateRightModel
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114710303647202208, guid: d29bc40b7f3df26479d6a0aac211c355,
         type: 2}
@@ -383,7 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603c8e5e7a585fc4a974823bf8238819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsMoving: 0
+  IsMoving: 1
   RotationRate: 10
   OrbitingSpeed: 9.4
 --- !u!114 &1139767901
@@ -500,7 +501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603c8e5e7a585fc4a974823bf8238819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsMoving: 0
+  IsMoving: 1
   RotationRate: 10
   OrbitingSpeed: 5
 --- !u!114 &1171390975
@@ -817,7 +818,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1877200480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.100842535, y: 0.074778125, z: 2.2631633}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

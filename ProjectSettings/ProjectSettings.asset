@@ -541,7 +541,14 @@ PlayerSettings:
   webGLUseEmbeddedResources: 0
   webGLUseWasm: 0
   webGLCompressionFormat: 1
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    1: CROSS_PLATFORM_INPUT
+    4: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    7: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    14: MOBILE_INPUT
+    17: MOBILE_INPUT
+    20: MOBILE_INPUT
+    22: MOBILE_INPUT
   platformArchitecture: {}
   scriptingBackend:
     Metro: 2
@@ -553,11 +560,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: SpaceBallsVR
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: D:\Dev\Git\SpaceBallsVR\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 00f76775a6a9d401
   metroApplicationDescription: SpaceBallsVR
   wsaImages: {}
   metroTileShortName: 
