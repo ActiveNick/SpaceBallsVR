@@ -14,6 +14,7 @@
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>WSAPlayer:21</UnityBuildTarget>
     <UnityVersion>2017.2.2p1</UnityVersion>
@@ -351,18 +352,8 @@
     <Compile Include="Assets\HoloToolkit\UX\Scripts\Collections\Editor\CollectionEditor.cs" />
     <Compile Include="Assets\HoloToolkit\UX\Scripts\Editor\CompoundButtonSaveInterceptor.cs" />
     <Compile Include="Assets\HoloToolkit\UX\Scripts\Editor\KeyboardInputFieldEditor.cs" />
-    <Compile Include="Assets\HoloToolkit-Examples\Medical\Editor\VolumeInformationEditor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\HoloToolkit-Examples\Medical\Shaders\PlaneCut.cginc" />
-    <None Include="Assets\HoloToolkit-Examples\Medical\Shaders\VolumeRenderShared.cginc" />
-    <None Include="Assets\HoloToolkit-Examples\Medical\Shaders\VolumeRenderSlice.shader" />
-    <None Include="Assets\HoloToolkit-Examples\Medical\Shaders\VolumeRenderThickSlice.shader" />
-    <None Include="Assets\HoloToolkit-Examples\Medical\Shaders\math.cginc" />
-    <None Include="Assets\HoloToolkit-Examples\Prototyping\Shaders\UnlitTransparentTriplanar.shader" />
-    <None Include="Assets\HoloToolkit-Examples\Prototyping\Shaders\UnlitTriplanar.shader" />
-    <None Include="Assets\HoloToolkit-Examples\UX\Materials\AcrylicReflective.shader" />
-    <None Include="Assets\HoloToolkit-Examples\UX\Materials\AcrylicReflectiveTransparent.shader" />
     <None Include="Assets\HoloToolkit\Input\Shaders\Cursor.shader" />
     <None Include="Assets\HoloToolkit\Input\Shaders\CursorShader.shader" />
     <None Include="Assets\HoloToolkit\Input\Shaders\EditorHands.shader" />
