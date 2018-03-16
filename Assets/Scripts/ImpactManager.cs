@@ -6,6 +6,12 @@ public class ImpactManager : MonoBehaviour {
 
     IEnumerator OnCollisionEnter(Collision col)
     {
+        Collider collider = GetComponent<Collider>();
+        if (collider != null)
+        {
+            collider.enabled = false;
+        }
+
         float waitValue = 0;
         // Play this when there is a collision
         AudioSource soundImpact = GetComponent<AudioSource>();
