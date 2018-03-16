@@ -3,7 +3,7 @@ Sample VR game for Windows Mixed Reality immersive headsets where you shoot aste
 
 This is a work in a progress that I am sharing publicly as I add features. This project is shared "as is" for educational purposes only.
 
-* **Unity version: 2017.2.1p3** [download here](https://beta.unity3d.com/download/273860332f50/UnityDownloadAssistant-2017.2.1p3.exe?_ga=2.193594410.660943326.1517859510-26152681.1510325491)
+* **Unity version: 2017.2.2p1** [download here](https://beta.unity3d.com/download/31794ac12ad1/UnityDownloadAssistant-2017.2.2p1.exe?_ga=2.249016135.1140385856.1521162264-26152681.1510325491)
 * **Mixed Reality Toolkit version: 2017.2.1.1** [download here](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases/tag/2017.2.1.1)
 
 ## Acknowledgements
