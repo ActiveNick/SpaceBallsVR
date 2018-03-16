@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using HoloToolkit.Unity.InputModule;
 
-public class AsteroidLauncher : MonoBehaviour, IInputHandler
+public class AsteroidLauncher : MonoBehaviour, IInputHandler, IInputClickHandler
 {
+    public Camera UserCamera;
     public GameObject MyControllers;
     public GameObject Projectile;
     public int LaunchForce = 1;
@@ -20,22 +21,40 @@ public class AsteroidLauncher : MonoBehaviour, IInputHandler
         InputManager.Instance.PushFallbackInputHandler(gameObject);
     }
 
+    // Input down only works with controllers, not gestures, so we'll make sure this is a VR headset
     void IInputHandler.OnInputDown(InputEventData eventData)
     {
-        if ((Time.realtimeSinceStartup - LastShotTime) > (1 / shotsPerSec))
+        if (MixedRealityCameraManager.Instance.CurrentDisplayType == MixedRealityCameraManager.DisplayType.Opaque)
         {
-            LastShotTime = Time.realtimeSinceStartup;
-            Ray shootingRay;
-            if (eventData.InputSource.TryGetPointingRay(eventData.SourceId, out shootingRay))
+            if ((Time.realtimeSinceStartup - LastShotTime) > (1 / shotsPerSec))
             {
-                Fire(shootingRay);
+                LastShotTime = Time.realtimeSinceStartup;
+                Ray shootingRay;
+                if (eventData.InputSource.TryGetPointingRay(eventData.SourceId, out shootingRay))
+                {
+                    Fire(shootingRay);
+                }
             }
         }
     }
 
     void IInputHandler.OnInputUp(InputEventData eventData)
     {
+        // Nothing to do here for now
+    }
 
+    // InputClicked works in both VR & HoloLens, so we'll make sure to only use it on HoloLens since OnInputDown is used for VR
+    public void OnInputClicked(InputClickedEventData eventData)
+    {
+        if (MixedRealityCameraManager.Instance.CurrentDisplayType == MixedRealityCameraManager.DisplayType.Transparent)
+        {
+            if ((Time.realtimeSinceStartup - LastShotTime) > (1 / shotsPerSec))
+            {
+                LastShotTime = Time.realtimeSinceStartup;
+                Ray shootingRay = new Ray(UserCamera.transform.position, UserCamera.transform.forward);
+                Fire(shootingRay);
+            }
+        }
     }
 
     /// <summary>

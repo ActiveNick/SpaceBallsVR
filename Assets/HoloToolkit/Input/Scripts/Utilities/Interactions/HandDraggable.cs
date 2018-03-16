@@ -355,6 +355,12 @@ namespace HoloToolkit.Unity.InputModule
                     // The input source must provide positional data for this script to be usable
                     return;
                 }
+
+                // EDITED BY NICK: Limiting the drag mechanic to the Grasp button only
+                if ((sourceKind == InteractionSourceInfo.Controller) && (eventData.PressType != InteractionSourcePressInfo.Grasp))
+                {
+                    return;
+                }
             }
 #else
             if (!eventData.InputSource.SupportsInputInfo(eventData.SourceId, SupportedInputInfo.Position))

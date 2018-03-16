@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceBallsVR", "SpaceBallsVR.csproj", "{33ECCCA9-BC89-EDBE-6E73-61BE86DB76D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceBallsVR.Plugins", "SpaceBallsVR.Plugins.csproj", "{0203B16F-DBB9-8B50-BBF1-C9B54690348A}"
