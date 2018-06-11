@@ -5,7 +5,7 @@ This is a work in a progress that I am sharing publicly as I add features. This 
 
 ![Scene View](Screenshots/SceneView01.PNG)
 
-* **Unity version: 2017.2.2p1** [download here](https://beta.unity3d.com/download/31794ac12ad1/UnityDownloadAssistant-2017.2.2p1.exe?_ga=2.249016135.1140385856.1521162264-26152681.1510325491)
+* **Unity version: 2017.4.3f1**
 * **Mixed Reality Toolkit version: 2017.2.1.1** [download here](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases/tag/2017.2.1.1)
 
 ## Implementation Notes
@@ -13,6 +13,7 @@ This is a work in a progress that I am sharing publicly as I add features. This 
 * Use the controller Trigger button to shoot asteroids at the planets (or Air Tap on HoloLens).
 * Use the Grasp (side) button on the controller to grab planets and drag them around the scene (not available on HoloLens for now).
 The ParticleHolder prefab is not used in the scene. It is just a placeholder prefab to hold the preconfigured particle effect of the asteroid explosion so you can apply it to other objects.
+* This sample uses Microsoft Cognitive Services for the Text-to-Speech (TTS) integration. Please refer to my [Unity Text-to-Speech](https://github.com/ActiveNick/Unity-Text-to-Speech) sample here for more information on the code behind and to obtain an API key to call this cloud API. 
 
 ## Acknowledgements
 * This project uses the [Asteroids Pack](https://assetstore.unity.com/packages/3d/environments/asteroids-pack-84988) from [Mark Dion](https://assetstore.unity.com/publishers/27658). Please **do not lift these assets** directly from my sample for your own projects, get them yourself in the [Unity Asset Store here](https://assetstore.unity.com/packages/3d/environments/asteroids-pack-84988).
