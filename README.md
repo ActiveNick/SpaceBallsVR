@@ -21,5 +21,4 @@ The ParticleHolder prefab is not used in the scene. It is just a placeholder pre
 
 ## Follow Me
 * Twitter: [@ActiveNick](http://twitter.com/ActiveNick)
-* Blog: [AgeofMobility.com](http://AgeofMobility.com)
 * SlideShare: [http://www.slideshare.net/ActiveNick](http://www.slideshare.net/ActiveNick)
